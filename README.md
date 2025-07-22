@@ -7,7 +7,10 @@ Webpack Insight+ 是一款功能强大的 Chrome 扩展，专为前端开发者�
 
 1.提取异步js
 
-<img width="2840" height="2949" alt="deepseek_mermaid_20250722_b13721" src="https://github.com/user-attachments/assets/835920b7-2868-4062-9fd5-d057656f0045" />
+![deepseek_mermaid_20250722_bab0e2](https://github.com/user-attachments/assets/e78fa531-414b-4fc9-b1f5-b82e4738fd95)
+
+
+
 
 2.敏感信息的检测(实验性功能，不能完全替代hae，此功能在于快速的检索一些敏感信息。)
 
