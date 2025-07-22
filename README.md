@@ -1,0 +1,2 @@
+# Webpack_Insight
+用于提取Webpack打包的未加载的JavaScript文件，并扫描这些文件以查找敏感信息。
