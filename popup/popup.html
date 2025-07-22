@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Webpack Insight+</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 顶部标题栏 -->
+    <header class="header">
+      <div class="title-bar">
+        <h1>Webpack Insight+ 
+          <span class="version">v2.0 
+            <a href="http://111.231.18.241/about" target="_blank" style="color: #fff; text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,0.5);">风岚sec_TFour</a>
+          </span>
+        </h1>
+      </div>
+    </header>
+    
+    <!-- 控制区域 -->
+    <section class="controls">
+      <div class="prefix-section">
+        <label for="custom-prefix">自定义前缀:</label>
+        <input type="text" id="custom-prefix" placeholder="通过主动加载的js来获取正确的异步js前缀" class="prefix-input">
+        <button id="apply-prefix" class="btn btn-primary">应用</button>
+      </div>
+      
+      <!-- 新增的查找替换区域 -->
+      <div class="replace-section">
+        <div class="replace-inputs">
+          <input type="text" id="find-text" placeholder="查找内容" class="replace-input">
+          <input type="text" id="replace-text" placeholder="替换内容" class="replace-input">
+        </div>
+        <button id="apply-replace" class="btn btn-primary">替换</button>
+      </div>
+      
+      <div class="toggle-section">
+        <label class="toggle">
+          <input type="checkbox" id="show-loaded">
+          <span class="slider"></span>
+          <span class="label">显示已加载文件</span>
+        </label>
+        <button id="analyze-btn" class="btn btn-primary">深度分析</button>
+        <button id="scan-btn" class="btn btn-warning">检测敏感信息</button>
+        <button id="refresh-btn" class="btn btn-secondary">刷新</button>
+      </div>
+    </section>
+
+    <!-- 文件列表区域 -->
+    <section class="file-section">
+      <div id="file-list">
+        <div class="loading">正在加载...</div>
+      </div>
+    </section>
+
+    <!-- 敏感信息检测结果面板 (默认隐藏) -->
+    <section id="scan-results" class="scan-results" style="display: none;">
+      <div class="scan-header">
+        <h2>敏感信息检测结果</h2>
+        <button id="close-scan-results" class="btn btn-danger">关闭</button>
+      </div>
+      <div id="scan-results-content" class="scan-results-content">
+        <div class="loading">正在检测中...</div>
+      </div>
+    </section>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
