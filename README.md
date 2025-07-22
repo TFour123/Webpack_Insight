@@ -1,5 +1,7 @@
 Webpack Insight+ 是一款功能强大的 Chrome 扩展，专为前端开发者和安全研究人员设计，用于分析 Webpack 打包的网页应用。它能够提取未加载的 JavaScript 代码块（chunks），扫描敏感信息，并提供深度分析功能。
 
+<img width="2134" height="1204" alt="111" src="https://github.com/user-attachments/assets/48e00708-0bfc-4900-9dd5-ced66ceb66f1" />
+
 功能亮点
 
 🕵️‍♂️ Webpack 代码块分析
